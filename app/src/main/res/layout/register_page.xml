@@ -18,24 +18,24 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:text="Username:"/>
 
-                        <EditText
-                            android:layout_width="wrap_content"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:id="@+id/username"/>
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="Password:"/>
 
-                <EditText
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:id="@+id/password"/>
@@ -46,19 +46,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="Confirm Password:"/>
 
-                <EditText
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:id="@+id/confirm_password"/>
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/register_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
