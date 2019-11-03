@@ -5,15 +5,30 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 class RetrofitClient {
 
-    private static Retrofit retrofit = null;
+    private static Retrofit retrofitLogin = null;
+    private static Retrofit retrofitStart = null;
 
-    public static Retrofit getClient(String baseUrl) {
-        if (retrofit==null) {
-            retrofit = new Retrofit.Builder()
+    public static Retrofit getClientLogin(String baseUrl) {
+        retrofitLogin = null;
+
+        if (baseUrl != null) {
+            retrofitLogin = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit;
+        return retrofitLogin;
+    }
+
+    public static Retrofit getClientStart(String baseUrl) {
+        retrofitStart = null;
+
+        if (baseUrl != null) {
+            retrofitStart = new Retrofit.Builder()
+                    .baseUrl(baseUrl)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return retrofitStart;
     }
 }
